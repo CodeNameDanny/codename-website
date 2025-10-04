@@ -1,9 +1,66 @@
-baseURL = ''
+baseURL = 'https://codenamedanny.dev'
 languageCode = 'en-us'
 title = 'CodeName Danny'
-theme = 'PaperMod'
+theme = 'nightfall'
 min = '0.150.0'
 
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[pagination]
+pagerSize = 3
+
+[menu]
+  [[menu.header]]
+    name = "about"
+    weight = 1
+    url = "about"
+
+[params]
+user = "hello"
+hostname = ""
+sitedescription = "It's me"
+
+# You can configure external links to open in new tabs by adding this parameter
+openLinksInNewTab = true
+
+displayDateFormat = "2006-01-02"
+
+# Global metadata display settings
+# Each can be overridden in individual post frontmatter
+showMetadata = true       # Master switch for all metadata display
+showPublishedDate = false  # Show published date on post page
+showReadingTime = false    # Show reading time on post page
+showTags = false           # Show tags on post page
+showAuthors = false        # Show authors on post page
+showCategories = false     # Show categories on post page
+
+  [params.author]
+    name = "[CodeName] Danny"  # Website and RSS feed author
+
+
+[[params.social]]
+key = 0
+name = "itch.io"
+url = "https://codenamedanny.itch.io/"
+target = "_blank"
+aria = "itch.io Profile"
+
+[[params.social]]
+key = 2
+name = "linkedin"
+url = "https://www.linkedin.com/in/daniel-tan843"
+aria = "LinkedIn Profile"
+
+[[params.social]]
+key = 3
+name = "email"
+url = "mailto:danny@codenamedanny.dev"
+aria = "My e-Mail Address"
